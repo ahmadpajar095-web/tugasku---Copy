@@ -16,7 +16,12 @@ class HomePage extends StatelessWidget {
     final daftarMatkul = matkulProvider.items;
 
     return Scaffold(
-      appBar: AppBar(title: const Text("Pengingat Tugas Kuliah")),
+      appBar: AppBar(
+        title: const Text(
+          "Pengingat Tugas Kuliah",
+          selectionColor: Color.fromARGB(0, 87, 87, 246),
+        ),
+      ),
       body: daftarMatkul.isEmpty
           ? const Center(
               child: Text(
